@@ -1,0 +1,27 @@
+class Number:
+    def __init__(self, number):
+        self.number = number
+
+    def task_1(self, number):
+        # введення
+        self.number = (number)
+
+    def print(self):
+        print("число=", self.number)
+
+    def count(self):
+        return len(str(self.number))
+
+    def sum(self):
+        sum = 0
+        while self.number != 0:
+            number1 = self.number % 10
+            self.number = self.number // 10
+            sum += number1
+        return sum
+
+num = int(input("give me a number"))
+a = Number(num)
+a.print()
+print("кількість цифр у числі= ", a.count())
+print('сума цифр у числі= ', a.sum())
