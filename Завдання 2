@@ -1,1 +1,33 @@
+import datetime
 
+class Information_about_the_auto:
+    def __init__(self, marka,colour,number,day,month,year):
+        self.marka=marka
+        self.colour=colour
+        self.number=number
+        self.release=Date(day,month,year)
+class Date:
+    def __init__(self, day, month, year):
+        self.now = datetime.datetime.now()
+        self.day = day
+        self.month = month
+        self.year = year
+
+class Information_about_the_manufacturer:
+    def __init__(self,name,year,phone,sale):
+        self.name=name
+        self.year=year
+        self.phone=phone
+        self.sale=sale
+        
+class Information_about_the_seller:
+    def __init__(self,name,year,phone,sale):
+        self.name=name
+        self.year=year
+        self.phone=phone
+        self.sale=sale
+        
+class Information_about_the_owner:
+    def __init__(self,name,identification):
+        self.name=name
+        self.identification=identification
